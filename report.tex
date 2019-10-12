@@ -1,0 +1,189 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The original template for this document was taken from:
+% http://www.michaelshell.org/tex/ieeetran/
+%
+% Adapted for courses at the University of Regina by:
+% Mikhail Shchukin 
+%
+% Edited by Trevor Tomesh
+% October 11th 2019
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%!!!!!!!!!!!!! DON'T TOUCH THIS !!!!!!!!!!!!!!!!!!!!!!!!!
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{threeparttable}
+\usepackage{subfigure}
+\graphicspath{ {./img/} }
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+% Enter the course, assignment number, your name, and student ID below: 
+\newcommand{\course}{CS 207} % course
+\newcommand{\anum}{1} % assginment number
+\newcommand{\name}{Bob T. Builder} % your name
+\newcommand{\sid}{20012345} % student ID
+
+
+%!!!!!! DON'T TOUCH THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\title{\course{} \\ Assignment \# \anum{}}
+\author{\name{},~\IEEEmembership{\course{},~University~of~Regina},~Student ID\# \sid{}}
+\maketitle
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+\section{Introdution to formatting your assignment the right way}
+You should use \LaTeX to make your assignments readable and easy to mark. Simply replace this and 
+the following sections in order to automatically make your assignments look great! Here's some Latin to take up space. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+
+\subsection{Writing a subsection}
+This is a subsection. Many assignments have multiple parts to them and so there should be a subsection
+for each part. Just give the subsection a witty name -- or the one provided by the assignment. Here's some more Latin. Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+\\
+
+\subsubsection{A subsubsection}
+This is a subsubsection. You probably won't have to do this often, but if you have a really detailed 
+subsection, here ya go. I like Latin. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+\\
+
+\subsubsection{Another Subsubsection}
+Here's another subsubsection -- and here's some more Latin. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+
+\section{Equations and Lists}
+% example of an equation use -- can be done with packages or pure IEEE class + LaTeX
+% numbered equation
+Use the following as templates for writing equations. More Latin! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+
+\subsection{Here's Some Equation Templates}
+
+\begin{equation}
+    \label{eq:kinetic_energy}
+    E_{k} = \frac{1}{2}mv^{2}
+\end{equation}
+
+% non-numbered equation
+\begin{equation*}
+time = (distance / velocity) \times  E_{k}
+\end{equation*}
+
+\subsection{Here's some lists}
+
+Here is a list of various things:
+\begin{itemize}
+	\item{Thing 1}
+	\item{Thing 2}
+		\begin{itemize}
+			\item{Sub-Thing 1}
+			\item{Sub-Thing 2}
+			\begin{itemize}
+				\item{Sub-Sub-Thing 1}
+				\item{Sub-Sub-Thing 2}
+			\end{itemize}
+			\item{Last Sub-Thing}
+		\end{itemize}
+	\item{Last thing}
+\end{itemize}
+
+\section{Including Figures}
+
+Here's how you include figures. There's a bunch of different ways to do it. And here's some more Latin.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+
+\begin{figure}[h]
+    \centering
+    \subfigure[First caption]
+    {
+        \includegraphics[width=2in]{img/img1.png}
+    }
+    \subfigure[Second caption]
+    {
+        \includegraphics[width=2in]{img/img2.png}
+    }
+    \subfigure[Third caption]
+    {
+        \includegraphics[width=2in]{img/img3.png}
+    }
+% Note: caption below can be omitted
+    \caption{A collection of subfigures}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+  	\includegraphics[width=0.5\textwidth]{img/img4.png}
+  	\caption{Regular, single centered figure}	
+  	\label{fig:img1}
+\end{figure}
+
+\section{Task 2 - Referencing cool stuff used in other places}
+\textbf{Lorem ipsum} \underline{dolor sit amet}, \textit{consectetur adipiscing elit}, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+\\
+
+\begin{table}[h]
+\centering
+\caption{Table of things} 
+\label{tab:tab1}
+	\begin{tabular}{ | l | l | l |}
+ 		\hline
+ 		Column header 1 & Column header 2 & Column header 3 \\ \hline
+ 		10 & 22 things & 68360.5  \\ \hline
+		15 & 16 things & 48142.7 \\ \hline
+		20 & 14 things & 42781.1  \\ \hline
+		22 & 13 things & 40764.5 \\ \hline
+		23 & 9 things & 26577.2 \\ \hline
+	\end{tabular}
+\end{table}
+
+A particular example of a meme can be seen on Fig. \ref{fig:img1}.
+\\
+
+Below follows the text file content, check out Listing \ref{lst1}:
+
+\lstset{basicstyle=\ttfamily}
+\lstinputlisting[language=C,breaklines=true,caption={The underlying textual form of the graph},captionpos=b,showstringspaces=false,label=lst1]{graph.txt}
+
+Holy smokes! That was powerful. You can also check out automatically numbered Fig. \ref{fig:img1}, but if you screw up and reference something that does not exist in your document, you get this -- \ref{fig:img1488}. Watch out!
+
+Thus, if the stuff shown in Fig. \ref{fig:img1} was looked at, then you can check Listing \ref{lst2} in Appendix \ref{app1}, which is cool and good.
+
+For mommy's political centrists or anyone who likes centered stuff:
+\begin{center}
+This is a centered text. You weren't baffled.
+\end{center}
+
+\section{Conclusion}
+This was merely a whacky demonstration of the power that this weird \LaTeX ~typesetting blesses you with. Prepared by Mikhail Shchukin, Department of Computer Science, University of Regina. Now it's time for you to go and compile your assignment report without any compiling errors, moved away floating figures and more.
+\begin{center}
+WAIT, OH SHI...
+\end{center}
+
+\appendices
+
+\section{Lifehack code}
+\label{app1}
+\lstset{basicstyle=\ttfamily}
+\lstinputlisting[language=C++,breaklines=true,caption={The output of the routing algorithm solving the problem},captionpos=b,showstringspaces=false,label=lst2]{output.txt}
+
+
+\begin{thebibliography}{1}
+
+\bibitem{monge:monge}
+G. Monge. \emph{Mémoire sur la théorie des déblais et des remblais. Histoire de l’Académie Royale des Sciences de Paris, avec les Mémoires de Mathématique et de Physique pour la même année}. , pages 666–704, 1781.
+
+\bibitem{kanto:kanto}
+L. Kantorovich. \emph{On the translocation of masses}. C.R. (Doklady) Acad. Sci. URSS (N.S.), 37:199–201, 1942.
+
+\bibitem{web:web}
+Graphviz.org. \emph{Graphviz - Graph Visualization Software}. 2019. [online] Available at: http://www.graphviz.org/ [Accessed 24 Mar. 2019].
+
+\end{thebibliography}
+
+% this is the end of all
+\end{document}

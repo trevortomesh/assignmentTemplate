@@ -1,0 +1,9 @@
+graph G {
+"0" [label="0 J", type=0, supply=0, demand=0]
+"0"--"5"[label=" d = 397.387\n t = 427", distance=397.387, time=427]
+"0"--"8"[label=" d = 585.713\n t = 558", distance=585.713, time=558]
+"1" [label="1 S", type=1, supply=0, demand=22]
+"1"--"5"[label=" d = 243.602\n t = 174", distance=243.602, time=174]
+"2" [label="2 J", type=0, supply=0, demand=0]
+"2"--"9"[label=" d = 802.2\n t = 483", distance=802.2, time=483]
+}
