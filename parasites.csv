@@ -1,0 +1,117 @@
+1,Acanthamoeba Infection,grass
+2,Acanthamoeba Keratitis Infection,grass
+3,African Sleeping Sickness (African trypanosomiasis),grass
+4,"Alveolar Echinococcosis (Echinococcosis, Hydatid Disease)",fire
+5,Amebiasis (Entamoeba histolytica Infection),fire
+6,American Trypanosomiasis (Chagas Disease),water
+7,Ancylostomiasis (Hookworm),grass
+8,Angiostrongyliasis (Angiostrongylus Infection),fire
+9,"Anisakiasis (Anisakis Infection, Pseudoterranova Infection)",water
+10,"Ascariasis (Ascaris Infection, Intestinal Roundworms)",grass
+11,Babesiosis (Babesia Infection),water
+12,Balantidiasis (Balantidium Infection),water
+13,Balamuthia,fire
+14,"Baylisascariasis (Baylisascaris Infection, Raccoon Roundworm)",grass
+15,Bed Bugs,grass
+16,Bilharzia (Schistosomiasis),grass
+17,Blastocystis hominis Infection,water
+18,Body Lice Infestation (Pediculosis),water
+19,Capillariasis (Capillaria Infection),water
+20,Cercarial Dermatitis (Swimmer’s Itch),water
+21,Chagas Disease (American Trypanosomiasis),fire
+22,Chilomastix mesnili Infection (Nonpathogenic [Harmless] Intestinal Protozoa),water
+23,Clonorchiasis (Clonorchis Infection),water
+24,"CLM (Cutaneous Larva Migrans, Ancylostomiasis, Hookworm)",grass
+25,“Crabs” (Pubic Lice),water
+26,Cryptosporidiosis (Cryptosporidium Infection),water
+27,"Cutaneous Larva Migrans (CLM, Ancylostomiasis, Hookworm)",grass
+28,Cyclosporiasis (Cyclospora Infection),fire
+29,Cysticercosis (Neurocysticercosis),fire
+30,Cystoisospora Infection (Cystoisosporiasis) formerly Isospora Infection,fire
+31,Dientamoeba fragilis Infection,water
+32,Diphyllobothriasis (Diphyllobothrium Infection),grass
+33,Dipylidium caninum Infection (dog or cat tapeworm infection),water
+34,Dirofilariasis (Dirofilaria Infection),water
+35,DPDx,water
+36,Dracunculiasis (Guinea Worm Disease),water
+37,Drinking Water,fire
+38,Dog tapeworm (Dipylidium caninum Infection),grass
+39,"Echinococcosis (Cystic, Alveolar Hydatid Disease)",water
+40,"Elephantiasis (Filariasis, Lymphatic Filariasis)",fire
+41,Endolimax nana Infection (Nonpathogenic [Harmless] Intestinal Protozoa),water
+42,Entamoeba coli Infection (Nonpathogenic [Harmless] Intestinal Protozoa),fire
+43,Entamoeba dispar Infection (Nonpathogenic [Harmless] Intestinal Protozoa),fire
+44,Entamoeba hartmanni Infection (Nonpathogenic [Harmless] Intestinal Protozoa),fire
+45,Entamoeba histolytica Infection (Amebiasis),water
+46,Entamoeba polecki,fire
+47,Enterobiasis (Pinworm Infection),water
+48,Fascioliasis (Fasciola Infection),fire
+49,Fasciolopsiasis (Fasciolopsis Infection),fire
+50,"Filariasis (Lymphatic Filariasis, Elephantiasis)",fire
+51,Foodborne Diseases,grass
+52,Giardiasis (Giardia Infection),grass
+53,Gnathostomiasis (Gnathostoma Infection),grass
+54,Guinea Worm Disease (Dracunculiasis),fire
+55,Head Lice Infestation (Pediculosis),grass
+56,Heterophyiasis (Heterophyes Infection),fire
+57,"Hookworm Infection, Human",fire
+58,"Hookworm Infection, Zoonotic (Ancylostomiasis, Cutaneous Larva Migrans [CLM])",water
+59,"Hydatid Disease (Cystic, Alveolar Echinococcosis)",grass
+60,Hymenolepiasis (Hymenolepis Infection),water
+61,"Intestinal Roundworms (Ascariasis, Ascaris Infection)",water
+62,Iodamoeba buetschlii Infection (Nonpathogenic [Harmless] Intestinal Protozoa),grass
+63,Isospora Infection (see Cystoisospora Infection ),water
+64,"Kala-azar (Leishmaniasis, Leishmania Infection)",fire
+65,Keratitis (Acanthamoeba Infection),water
+66,"Leishmaniasis (Kala-azar, Leishmania Infection)",fire
+67,"Lice Infestation (Body, Head, or Pubic Lice, Pediculosis, Pthiriasis)",water
+68,"Liver Flukes (Clonorchiasis, Opisthorchiasis, Fascioliasis)",fire
+69,Loiasis (Loa loa Infection),grass
+70,"Lymphatic filariasis (Filariasis, Elephantiasis)",fire
+71,Malaria (Plasmodium Infection),fire
+72,Microsporidiosis (Microsporidia Infection ),fire
+73,Mite Infestation (Scabies),grass
+74,Myiasis,fire
+75,Naegleria Infection,fire
+76,Neurocysticercosis (Cysticercosis),water
+77,Neglected Parasitic Infections in the U.S.,grass
+78,Neglected Tropical Diseases,fire
+79,Nonpathogenic (Harmless) Intestinal Protozoa,grass
+80,"Ocular Larva Migrans (Toxocariasis, Toxocara Infection, Visceral Larva Migrans)",fire
+81,Onchocerciasis (River Blindness),fire
+82,Opisthorchiasis (Opisthorchis Infection),grass
+83,Paragonimiasis (Paragonimus Infection),grass
+84,Pediculosis (Head or Body Lice Infestation),water
+85,Pthiriasis (Pubic Lice Infestation),water
+86,Pinworm Infection (Enterobiasis),grass
+87,Plasmodium Infection (Malaria),water
+88,Pneumocystis jirovecii Pneumonia,water
+89,"Pseudoterranova Infection (Anisakiasis, Anisakis Infection)",water
+90,"Pubic Lice Infestation (“Crabs,” Pthiriasis)",fire
+91,"Raccoon Roundworm Infection (Baylisascariasis, Baylisascaris Infection)",grass
+92,Recreational Water,grass
+93,River Blindness (Onchocerciasis),water
+94,Sappinia,fire
+95,Sarcocystosis (Sarcocystosis Infection),grass
+96,Scabies,grass
+97,Schistosomiasis (Bilharzia),grass
+98,"Sleeping Sickness (Trypanosomiasis, African; African Sleeping Sickness)",fire
+99,Soil-transmitted Helminths,fire
+100,Strongyloidiasis (Strongyloides Infection),fire
+101,Swimmer’s Itch (Cercarial Dermatitis),fire
+102,Swimming Pools,water
+103,"Taeniasis (Taenia Infection, Tapeworm Infection)",water
+104,"Tapeworm Infection (Taeniasis, Taenia Infection)",grass
+105,"Toxocariasis (Toxocara Infection, Ocular Larva Migrans, Visceral Larva Migrans)",grass
+106,Toxoplasmosis (Toxoplasma Infection),water
+107,Trichinellosis (Trichinosis),water
+108,Trichinosis (Trichinellosis),water
+109,Trichomoniasis (Trichomonas Infection),grass
+110,"Trichuriasis (Whipworm Infection, Trichuris Infection)",fire
+111,"Trypanosomiasis, African (African Sleeping Sickness, Sleeping Sickness)",fire
+112,"Trypanosomiasis, American (Chagas Disease)",grass
+113,"Visceral Larva Migrans (Toxocariasis, Toxocara Infection, Ocular Larva Migrans)",water
+114,Waterborne Diseases,grass
+115,"Whipworm Infection (Trichuriasis, Trichuris Infection)",water
+116,Zoonotic Diseases (Diseases spread from animals to people),fire
+117,"Zoonotic Hookworm Infection (Ancylostomiasis, Cutaneous Larva Migrans [CLM])",fire

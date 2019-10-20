@@ -7,7 +7,7 @@
 % Mikhail Shchukin 
 %
 % Edited by Trevor Tomesh
-% October 11th 2019
+% October 20th 2019
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -27,9 +27,9 @@
 
 
 % Enter the course, assignment number, your name, and student ID below: 
-\newcommand{\course}{CS 207} % course
-\newcommand{\anum}{1} % assginment number
-\newcommand{\name}{Bob T. Builder} % your name
+\newcommand{\course}{CS 490DB} % course
+\newcommand{\anum}{6} % assginment number
+\newcommand{\name}{Trevor M. Tomesh} % your name
 \newcommand{\sid}{20012345} % student ID
 
 
@@ -40,148 +40,132 @@
 %!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-\section{Introdution to formatting your assignment the right way}
-You should use \LaTeX to make your assignments readable and easy to mark. Simply replace this and 
-the following sections in order to automatically make your assignments look great! Here's some Latin to take up space. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
+\section{Description}
+This document is a write-up for assignment 6 in CS 490DB -- Applications in Natural Sciences. In this assignment, we have been asked to take 
+raw data from the CDC's list of ``parasites of public health concern''~\cite{cdc:2019} and perform the following operations in a python program:
 
-\subsection{Writing a subsection}
-This is a subsection. Many assignments have multiple parts to them and so there should be a subsection
-for each part. Just give the subsection a witty name -- or the one provided by the assignment. Here's some more Latin. Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
-\\
-
-\subsubsection{A subsubsection}
-This is a subsubsection. You probably won't have to do this often, but if you have a really detailed 
-subsection, here ya go. I like Latin. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
-\\
-
-\subsubsection{Another Subsubsection}
-Here's another subsubsection -- and here's some more Latin. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
-
-\section{Equations and Lists}
-% example of an equation use -- can be done with packages or pure IEEE class + LaTeX
-% numbered equation
-Use the following as templates for writing equations. More Latin! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
-
-\subsection{Here's Some Equation Templates}
-
-\begin{equation}
-    \label{eq:kinetic_energy}
-    E_{k} = \frac{1}{2}mv^{2}
-\end{equation}
-
-% non-numbered equation
-\begin{equation*}
-time = (distance / velocity) \times  E_{k}
-\end{equation*}
-
-\subsection{Here's some lists}
-
-Here is a list of various things:
 \begin{itemize}
-	\item{Thing 1}
-	\item{Thing 2}
-		\begin{itemize}
-			\item{Sub-Thing 1}
-			\item{Sub-Thing 2}
-			\begin{itemize}
-				\item{Sub-Sub-Thing 1}
-				\item{Sub-Sub-Thing 2}
-			\end{itemize}
-			\item{Last Sub-Thing}
-		\end{itemize}
-	\item{Last thing}
+\item read the raw data from a plain-text file into python
+\item parse out the individual parasites from this raw data using a 
+list comprehension
+\item assign each parasite a number and a random ``type'' like a Pokemon
+\item write the parasites out to a CSV in the following format: \emph{number, name, type}
 \end{itemize}
 
-\section{Including Figures}
+While it was not required, I have decided to include exception handling on writing the CSV 
+file because this tends to be the portion of the code that is most likely to fail given 
+permissions issues. 
 
-Here's how you include figures. There's a bunch of different ways to do it. And here's some more Latin.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
-
-\begin{figure}[h]
-    \centering
-    \subfigure[First caption]
-    {
-        \includegraphics[width=2in]{img/img1.png}
-    }
-    \subfigure[Second caption]
-    {
-        \includegraphics[width=2in]{img/img2.png}
-    }
-    \subfigure[Third caption]
-    {
-        \includegraphics[width=2in]{img/img3.png}
-    }
-% Note: caption below can be omitted
-    \caption{A collection of subfigures}
-\end{figure}
+\section{User Interaction}
+This is a command-line application with minimal user interaction. To use the program, a user only needs to write invoke the python3 interpreter as shown in Fig.~\ref{fig:success}.
 
 \begin{figure}[h]
 	\centering
-  	\includegraphics[width=0.5\textwidth]{img/img4.png}
-  	\caption{Regular, single centered figure}	
-  	\label{fig:img1}
+  	\includegraphics[width=0.5\textwidth]{img/success.png}
+  	\caption{Basic User Interaction}	
+  	\label{fig:success}
 \end{figure}
 
-\section{Task 2 - Referencing cool stuff used in other places}
-\textbf{Lorem ipsum} \underline{dolor sit amet}, \textit{consectetur adipiscing elit}, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat \cite{kanto:kanto}. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur \cite{monge:monge}. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \cite{web:web}.
-\\
+If the program has run successfully, the user will receive the message \emph{``Writing to parasites.csv was successful!''}. However, if the program has not run successfully, the user
+will receive the message \emph{``The following error occurred: ''} followed by the specific 
+exception as shown in Fig.~\ref{fig:fail}. 
 
-\begin{table}[h]
-\centering
-\caption{Table of things} 
-\label{tab:tab1}
-	\begin{tabular}{ | l | l | l |}
- 		\hline
- 		Column header 1 & Column header 2 & Column header 3 \\ \hline
- 		10 & 22 things & 68360.5  \\ \hline
-		15 & 16 things & 48142.7 \\ \hline
-		20 & 14 things & 42781.1  \\ \hline
-		22 & 13 things & 40764.5 \\ \hline
-		23 & 9 things & 26577.2 \\ \hline
-	\end{tabular}
-\end{table}
+\begin{figure}[h]
+	\centering
+  	\includegraphics[width=0.5\textwidth]{img/fail.png}
+  	\caption{Writing to CSV has failed}	
+  	\label{fig:fail}
+\end{figure}
 
-A particular example of a meme can be seen on Fig. \ref{fig:img1}.
-\\
+\section{Known Issues and Limitations}
+For some reason the program seems to put quotation marks around some of the parasite 
+names and not around others. There should be no quotation marks around names other than ``crabs'' as it is the common nick-name for a parasite. Otherwise, the program meets all 
+of the criteria listed so long as the text file is present in the same directory as the 
+program and is not edited from its given state. 
 
-Below follows the text file content, check out Listing \ref{lst1}:
-
-\lstset{basicstyle=\ttfamily}
-\lstinputlisting[language=C,breaklines=true,caption={The underlying textual form of the graph},captionpos=b,showstringspaces=false,label=lst1]{graph.txt}
-
-Holy smokes! That was powerful. You can also check out automatically numbered Fig. \ref{fig:img1}, but if you screw up and reference something that does not exist in your document, you get this -- \ref{fig:img1488}. Watch out!
-
-Thus, if the stuff shown in Fig. \ref{fig:img1} was looked at, then you can check Listing \ref{lst2} in Appendix \ref{app1}, which is cool and good.
-
-For mommy's political centrists or anyone who likes centered stuff:
-\begin{center}
-This is a centered text. You weren't baffled.
-\end{center}
-
-\section{Conclusion}
-This was merely a whacky demonstration of the power that this weird \LaTeX ~typesetting blesses you with. Prepared by Mikhail Shchukin, Department of Computer Science, University of Regina. Now it's time for you to go and compile your assignment report without any compiling errors, moved away floating figures and more.
-\begin{center}
-WAIT, OH SHI...
-\end{center}
+\newpage
 
 \appendices
 
-\section{Lifehack code}
-\label{app1}
-\lstset{basicstyle=\ttfamily}
-\lstinputlisting[language=C++,breaklines=true,caption={The output of the routing algorithm solving the problem},captionpos=b,showstringspaces=false,label=lst2]{output.txt}
+\section{Answers to Assignment Questions}
+\begin{enumerate}
+	\item \emph{Q: Explain how a list comprehension works.} \\
+	A: A list comprehension is analogous to a ``set builder'' in mathematics 
+	whereby a list of output elements is constructed from a collection of input 
+	elements (called the iterator) given some condition~\cite{yordanov:2019}. 
+	For example: 
 
+	\begin{lstlisting}[language=Python]
+	numbers = [1, 2, 3, 4, 5]
+	squares = [number**2 for number in numbers if number > 2]
+	print(squares)
+	\end{lstlisting}
+
+	output:
+ 
+	\begin{lstlisting}
+	[9, 16, 25]
+	\end{lstlisting}
+
+	As illustrated above, the comprehension will take a number from the list ``numbers'' if that
+	number is greater than 2 and add the square of that number to the list ``squares''. \\
+
+    \item \emph{Q: What is the meaning of life, the universe and everything?} \\
+    A: While the generally accepted answer is ``42'' as per author Douglas Adams~\cite{adams:1980}, Dr. Jordan Peterson argues that the meaning of life is to be found in the adoption of responsibility~\cite{lott:2019}. \\
+
+    \item \emph{Q: What is your favorite sorting algorithm?} \\
+    A: Merge Sort 
+
+\end{enumerate}	
+
+\newpage
+
+\section{parasites.py}
+\label{app1}
+\lstset{basicstyle=\small\selectfont\ttfamily}
+\lstinputlisting[language= python, 
+breaklines=true,         
+showtabs=false,
+showstringspaces=false,
+numberstyle=\tiny\color{mygray}
+caption={The raw code for this assignment},
+captionpos=b,label=lst2]{parasites.py}
+
+\newpage
+
+\section{parasites.txt}
+\label{app1}
+\lstset{basicstyle=\tiny}
+\lstinputlisting[language= , breaklines=true,
+caption={The raw input for the assignment},
+captionpos=b,showstringspaces=false,label=lst3]{parasites.txt}
+
+\newpage
+
+\section{parasites.csv}
+\label{app1}
+\lstset{basicstyle=\ttfamily \tiny}
+\lstinputlisting[language= , breaklines=true,
+caption={The output for this assignment},
+captionpos=b,showstringspaces=false,label=lst4]{parasites.csv}
+
+\newpage
 
 \begin{thebibliography}{1}
 
-\bibitem{monge:monge}
-G. Monge. \emph{Mémoire sur la théorie des déblais et des remblais. Histoire de l’Académie Royale des Sciences de Paris, avec les Mémoires de Mathématique et de Physique pour la même année}. , pages 666–704, 1781.
 
-\bibitem{kanto:kanto}
-L. Kantorovich. \emph{On the translocation of masses}. C.R. (Doklady) Acad. Sci. URSS (N.S.), 37:199–201, 1942.
 
-\bibitem{web:web}
-Graphviz.org. \emph{Graphviz - Graph Visualization Software}. 2019. [online] Available at: http://www.graphviz.org/ [Accessed 24 Mar. 2019].
+\bibitem{adams:1980}
+Adams, Douglas, 1952-2001. ( 1980). \emph{The hitchhiker's guide to the galaxy.} New York :Harmony Books
+
+\bibitem{cdc:2019}
+CDC - DPDx - \emph{Parasites A-Z Index.} (2019). Retrieved 20 October 2019, from https://www.cdc.gov/dpdx/az.html
+
+\bibitem{lott:2019}
+Lott, T. (2019). Jordan Peterson: ‘The pursuit of happiness is a pointless goal’. Retrieved 20 October 2019, from https://www.theguardian.com/global/2018/jan/21/jordan-peterson-self-help-author-12-steps-interview
+
+\bibitem{yordanov:2019}
+Yordanov, V. (2019). \emph{Python Basics: List Comprehensions.} Retrieved 20 October 2019, from https://towardsdatascience.com/python-basics-list-comprehensions-631278f22c40
 
 \end{thebibliography}
 
